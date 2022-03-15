@@ -4,7 +4,11 @@ import FRAGMENTS from '@apollosproject/ui-fragments';
 import { makeIcon } from '@apollosproject/ui-kit';
 
 const THEME = {
-  colors: {},
+  colors: {
+    primary: '#1A162A',
+    secondary: '#FC4646',
+    tertiary: '#222198',
+  },
   typography: {},
   overrides: {},
 };
