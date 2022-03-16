@@ -9,7 +9,13 @@ const THEME = {
     secondary: '#FC4646',
     tertiary: '#222198',
   },
-  typography: {},
+  typography: {
+    sans: {
+      black: {
+        default: 'BebasNeue',
+      },
+    },
+  },
   overrides: {},
 };
 

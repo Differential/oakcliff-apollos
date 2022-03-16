@@ -87,6 +87,17 @@ const HomeTab = createFeatureFeedTab({
     headerLeft: ProfileButton,
     headerLargeTitle: false,
   },
+  options: {
+    headerTitleStyle: {
+      fontFamily: 'BebasNeue',
+    },
+    headerLargeTitleStyle: {
+      fontFamily: 'BebasNeue',
+    },
+    headerBackTitleStyle: {
+      fontFamily: 'BebasNeue',
+    },
+  },
   tabName: 'Home',
   feedName: 'HOME',
 });
@@ -94,6 +105,17 @@ const HomeTab = createFeatureFeedTab({
 const ReadTab = createFeatureFeedTab({
   options: {
     headerLeft: ProfileButton,
+  },
+  screenOptions: {
+    headerTitleStyle: {
+      fontFamily: 'BebasNeue',
+    },
+    headerLargeTitleStyle: {
+      fontFamily: 'BebasNeue',
+    },
+    headerBackTitleStyle: {
+      fontFamily: 'BebasNeue',
+    },
   },
   tabName: 'Grow',
   feedName: 'READ',
@@ -103,6 +125,17 @@ const WatchTab = createFeatureFeedTab({
   options: {
     headerLeft: ProfileButton,
   },
+  screenOptions: {
+    headerTitleStyle: {
+      fontFamily: 'BebasNeue',
+    },
+    headerLargeTitleStyle: {
+      fontFamily: 'BebasNeue',
+    },
+    headerBackTitleStyle: {
+      fontFamily: 'BebasNeue',
+    },
+  },
   tabName: 'Next Steps',
   feedName: 'WATCH',
 });
@@ -111,6 +144,17 @@ const PrayTab = createFeatureFeedTab({
   options: {
     headerLeft: ProfileButton,
   },
+  screenOptions: {
+    headerTitleStyle: {
+      fontFamily: 'BebasNeue',
+    },
+    headerLargeTitleStyle: {
+      fontFamily: 'BebasNeue',
+    },
+    headerBackTitleStyle: {
+      fontFamily: 'BebasNeue',
+    },
+  },
   tabName: 'Serve',
   feedName: 'PRAY',
 });
@@ -118,6 +162,17 @@ const PrayTab = createFeatureFeedTab({
 const ConnectTab = createFeatureFeedTab({
   options: {
     headerLeft: ProfileButton,
+  },
+  screenOptions: {
+    headerTitleStyle: {
+      fontFamily: 'BebasNeue',
+    },
+    headerLargeTitleStyle: {
+      fontFamily: 'BebasNeue',
+    },
+    headerBackTitleStyle: {
+      fontFamily: 'BebasNeue',
+    },
   },
   tabName: 'Connect',
   feedName: 'CONNECT',
