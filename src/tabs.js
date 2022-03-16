@@ -23,9 +23,8 @@ const HeaderLogo = () => {
   const theme = useTheme();
   return (
     <Icon
-      name="brand-icon"
-      size={theme.sizing.baseUnit * 1.5}
-      fill={theme.colors.primary}
+      name={theme.type === 'light' ? 'brand-icon-light' : 'brand-icon-dark'}
+      size={theme.sizing.baseUnit * 3}
     />
   );
 };
@@ -57,8 +56,12 @@ const SearchButton = () => {
       <View>
         <Icon
           name="search"
-          size={theme.sizing.baseUnit * 2}
-          fill={theme.colors.primary}
+          size={theme.sizing.baseUnit * 1.5}
+          fill={
+            theme.type === 'light'
+              ? theme.colors.secondary
+              : theme.colors.text.secondary
+          }
         />
       </View>
     </Touchable>
