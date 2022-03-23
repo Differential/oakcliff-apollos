@@ -117,7 +117,7 @@ const ReadTab = createFeatureFeedTab({
       fontFamily: 'BebasNeue',
     },
   },
-  tabName: 'Grow',
+  tabName: 'Next Steps',
   feedName: 'READ',
 });
 
@@ -136,7 +136,7 @@ const WatchTab = createFeatureFeedTab({
       fontFamily: 'BebasNeue',
     },
   },
-  tabName: 'Next Steps',
+  tabName: 'Media',
   feedName: 'WATCH',
 });
 
@@ -155,7 +155,7 @@ const PrayTab = createFeatureFeedTab({
       fontFamily: 'BebasNeue',
     },
   },
-  tabName: 'Serve',
+  tabName: 'Give',
   feedName: 'PRAY',
 });
 
@@ -200,27 +200,27 @@ const TabNavigator = () => {
         options={{ tabBarIcon: tabBarIcon('house-line') }}
       />
       <Screen
-        // Read Tab
-        name="Grow"
-        component={ReadTab}
-        options={{ tabBarIcon: tabBarIcon('book-open') }}
+        name="Connect"
+        component={ConnectTab}
+        options={{ tabBarIcon: tabBarIcon('users') }}
       />
       <Screen
-        // Watch Tab
+        // Read Tab
         name="Next Steps"
-        component={WatchTab}
+        component={ReadTab}
         options={{ tabBarIcon: tabBarIcon('trend-up') }}
       />
       <Screen
-        // Serve Tab
-        name="Serve"
-        component={PrayTab}
-        options={{ tabBarIcon: tabBarIcon('hand-waving') }}
+        // Watch Tab
+        name="Media"
+        component={WatchTab}
+        options={{ tabBarIcon: tabBarIcon('youtube-logo') }}
       />
       <Screen
-        name="Connect"
-        component={ConnectTab}
-        options={{ tabBarIcon: tabBarIcon('user-circle') }}
+        // Give Tab
+        name="Give"
+        component={PrayTab}
+        options={{ tabBarIcon: tabBarIcon('currency-circle-dollar') }}
       />
     </Navigator>
   );
