@@ -2,6 +2,7 @@ import ApollosConfig from '@apollosproject/config';
 import Svg, { Path } from 'react-native-svg';
 import FRAGMENTS from '@apollosproject/ui-fragments';
 import { makeIcon } from '@apollosproject/ui-kit';
+import { Intro } from '@apollosproject/ui-onboarding/src/LandingSwiper/slides';
 
 const THEME = {
   colors: {
@@ -16,7 +17,31 @@ const THEME = {
       },
     },
   },
-  overrides: {},
+  overrides: {
+    'ui-onboarding.LandingSwiper.slides.Intro': {
+      size: 200,
+      greeting: 'Welcome to the OCBF App!',
+      subtitle: 'Be the church,\nmake an impact.',
+      items: [
+        { text: 'Grow in scripture.', icon: 'book-open' },
+        { text: 'Pray with each other.', icon: 'heart' },
+        { text: 'Be in community.', icon: 'users' },
+      ],
+    },
+    'ui-onboarding.LandingSwiper': {
+      // Only show the Intro slide
+      slides: [() => Intro],
+    },
+    'ui-onboarding.LandingSwiper.PhoneOutline': {
+      // Removes the phone mask
+      children: () => null,
+      // Hides the phone outline
+      fill: '#00000000',
+    },
+    'ui-onboarding.LandingSwiper.LandingSlide.ChildrenContainer': {
+      flex: 1,
+    },
+  },
 };
 
 const ICONS = {
