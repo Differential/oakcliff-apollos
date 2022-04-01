@@ -19,10 +19,10 @@ const THEME = {
   },
   overrides: {
     'ui-onboarding.LandingSwiper.slides.Intro': {
-      size: 200,
+      appIconSize: 200,
       greeting: 'Welcome to the OCBF App!',
       subtitle: 'Be the church,\nmake an impact.',
-      items: [
+      listItems: [
         { text: 'Grow in scripture.', icon: 'book-open' },
         { text: 'Pray with each other.', icon: 'heart' },
         { text: 'Be in community.', icon: 'users' },
