@@ -740,7 +740,7 @@
 				CODE_SIGN_ENTITLEMENTS = OakCliffBibleFellowship/OakCliffBibleFellowship.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 35;
+				CURRENT_PROJECT_VERSION = 36;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = XQAC4D787A;
 				HEADER_SEARCH_PATHS = (
@@ -778,7 +778,7 @@
 				CODE_SIGN_ENTITLEMENTS = OakCliffBibleFellowship/OakCliffBibleFellowship.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 35;
+				CURRENT_PROJECT_VERSION = 36;
 				DEVELOPMENT_TEAM = XQAC4D787A;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
