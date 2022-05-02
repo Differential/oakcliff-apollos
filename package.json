@@ -50,7 +50,7 @@
     "@apollosproject/ui-mapview": "^3.0.2",
     "@apollosproject/ui-media-player": "^3.5.0",
     "@apollosproject/ui-notifications": "^3.0.2",
-    "@apollosproject/ui-onboarding": "^3.0.2",
+    "@apollosproject/ui-onboarding": "^3.5.0",
     "@apollosproject/ui-passes": "^3.0.2",
     "@apollosproject/ui-prayer": "^3.0.2",
     "@apollosproject/ui-scripture": "^3.0.2",

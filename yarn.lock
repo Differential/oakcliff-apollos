@@ -131,15 +131,15 @@
     react-native-permissions "^2.0.5"
     url "^0.11.0"
 
-"@apollosproject/ui-onboarding@^3.0.2":
-  version "3.0.2"
-  resolved "https://registry.yarnpkg.com/@apollosproject/ui-onboarding/-/ui-onboarding-3.0.2.tgz#b3ab2ec2707daf160f81f8d10faf63eb9a646fe3"
-  integrity sha512-+tK4d2Xq3u8iGH7h67vRj3Vg+2/rhMUF6s/ZuH27VHspv1Ln/NqbncLxj6AHFHsZmEaCH+d3AL82m/ZUFXnTrw==
+"@apollosproject/ui-onboarding@^3.5.0":
+  version "3.5.0"
+  resolved "https://registry.yarnpkg.com/@apollosproject/ui-onboarding/-/ui-onboarding-3.5.0.tgz#1e47894df7c5ab69e6ed2941c5e2ed522bc326b7"
+  integrity sha512-aT7/zjgUVbxp9bTuFFrwAWJNRa0rC/1ZxxPCm8MTn9VSeFdoxwbBHzGEi8nJLMAfGKx/643onzjswxvCJ5CnVQ==
   dependencies:
     "@react-native-community/async-storage" "^1.5.1"
     formik "2.2.9"
     lodash "4.17.21"
-    moment "2.22.2"
+    moment "2.29.2"
     react-is "^16.9.0"
     react-native-swiper "^1.5.14"
     yup "0.26.6"
@@ -5480,10 +5480,10 @@ mockdate@^3.0.2:
   resolved "https://registry.yarnpkg.com/mockdate/-/mockdate-3.0.5.tgz#789be686deb3149e7df2b663d2bc4392bc3284fb"
   integrity sha512-iniQP4rj1FhBdBYS/+eQv7j1tadJ9lJtdzgOpvsOHng/GbcDh2Fhdeq+ZRldrPYdXvCyfFUmFeEwEGXZB5I/AQ==
 
-moment@2.22.2:
-  version "2.22.2"
-  resolved "https://registry.yarnpkg.com/moment/-/moment-2.22.2.tgz#3c257f9839fc0e93ff53149632239eb90783ff66"
-  integrity sha1-PCV/mDn8DpP/UxSWMiOeuQeD/2Y=
+moment@2.29.2:
+  version "2.29.2"
+  resolved "https://registry.yarnpkg.com/moment/-/moment-2.29.2.tgz#00910c60b20843bcba52d37d58c628b47b1f20e4"
+  integrity sha512-UgzG4rvxYpN15jgCmVJwac49h9ly9NurikMWGPdVxm8GZD6XjkKPxDTjQQ43gtGgnV3X0cAyWDdP2Wexoquifg==
 
 moment@^2.24.0, moment@^2.29.1:
   version "2.29.1"

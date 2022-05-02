@@ -18,6 +18,9 @@ const THEME = {
     },
   },
   overrides: {
+    'ui-auth.styles.ButtonLinkText': {
+      color: '#CCCCCC',
+    },
     'ui-onboarding.LandingSwiper.slides.Intro': {
       appIconSize: 200,
       greeting: 'Welcome to the OCBF App!',
