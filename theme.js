@@ -3,10 +3,13 @@ import Svg, { Path } from 'react-native-svg';
 import FRAGMENTS from '@apollosproject/ui-fragments';
 import { makeIcon } from '@apollosproject/ui-kit';
 import { Intro } from '@apollosproject/ui-onboarding/src/LandingSwiper/slides';
+import { Appearance } from 'react-native';
+
+const deviceColorScheme = Appearance.getColorScheme();
 
 const THEME = {
   colors: {
-    primary: '#1A162A',
+    primary: deviceColorScheme === 'light' ? '#1A162A' : '#504582',
     secondary: '#FC4646',
     tertiary: '#222198',
   },
