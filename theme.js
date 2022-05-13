@@ -3,7 +3,7 @@ import Svg, { Path } from 'react-native-svg';
 import FRAGMENTS from '@apollosproject/ui-fragments';
 import { makeIcon } from '@apollosproject/ui-kit';
 import { Intro } from '@apollosproject/ui-onboarding/src/LandingSwiper/slides';
-import { Appearance } from 'react-native';
+import { Appearance, Platform } from 'react-native';
 
 const deviceColorScheme = Appearance.getColorScheme();
 
@@ -28,11 +28,14 @@ const THEME = {
       appIconSize: 200,
       greeting: 'Welcome to the OCBF App!',
       subtitle: 'Be the church,\nmake an impact.',
-      listItems: [
-        { text: 'Grow in scripture.', icon: 'book-open' },
-        { text: 'Pray with each other.', icon: 'heart' },
-        { text: 'Be in community.', icon: 'users' },
-      ],
+      listItems:
+        Platform.OS === 'ios'
+          ? [
+              { text: 'Grow in scripture.', icon: 'book-open' },
+              { text: 'Pray with each other.', icon: 'heart' },
+              { text: 'Be in community.', icon: 'users' },
+            ]
+          : [],
     },
     'ui-onboarding.LandingSwiper': {
       // Only show the Intro slide
