@@ -3,9 +3,10 @@ import Svg, { Path } from 'react-native-svg';
 import FRAGMENTS from '@apollosproject/ui-fragments';
 import { makeIcon } from '@apollosproject/ui-kit';
 import { Intro } from '@apollosproject/ui-onboarding/src/LandingSwiper/slides';
-import { Appearance, Platform } from 'react-native';
+import { Appearance, Dimensions, Platform } from 'react-native';
 
 const deviceColorScheme = Appearance.getColorScheme();
+const screen = Dimensions.get('screen');
 
 const THEME = {
   colors: {
@@ -29,7 +30,7 @@ const THEME = {
       greeting: 'Welcome to the OCBF App!',
       subtitle: 'Be the church,\nmake an impact.',
       listItems:
-        Platform.OS === 'ios'
+        screen.height >= 800
           ? [
               { text: 'Grow in scripture.', icon: 'book-open' },
               { text: 'Pray with each other.', icon: 'heart' },
