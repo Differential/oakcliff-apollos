@@ -3,7 +3,7 @@ import Svg, { Path } from 'react-native-svg';
 import FRAGMENTS from '@apollosproject/ui-fragments';
 import { makeIcon } from '@apollosproject/ui-kit';
 import { Intro } from '@apollosproject/ui-onboarding/src/LandingSwiper/slides';
-import { Appearance, Dimensions, Platform } from 'react-native';
+import { Appearance, Dimensions } from 'react-native';
 
 const deviceColorScheme = Appearance.getColorScheme();
 const screen = Dimensions.get('screen');
@@ -22,9 +22,11 @@ const THEME = {
     },
   },
   overrides: {
-    'ui-auth.styles.ButtonLinkText': {
-      color: '#CCCCCC',
-    },
+    'ui-kit.Button': (theme) => ({
+      // Fixes an issue on Android where transparency do not look good
+      // This forces all buttons to be filled with colors.secondary
+      bordered: false,
+    }),
     'ui-onboarding.LandingSwiper.slides.Intro': {
       appIconSize: 200,
       greeting: 'Welcome to the OCBF App!',
