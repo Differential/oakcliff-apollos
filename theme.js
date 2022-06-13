@@ -22,11 +22,19 @@ const THEME = {
     },
   },
   overrides: {
-    'ui-kit.Button': (theme) => ({
-      // Fixes an issue on Android where transparency do not look good
-      // This forces all buttons to be filled with colors.secondary
+    // Fixes an issue on Android where transparency do not look good
+    // This forces all buttons to be filled with colors.secondary
+    'ui-kit.Button.ButtonStyles': {
+      backgroundColor: '#FC4646',
+      borderColor: '#FC4646',
+    },
+    'ui-prayer.PrayerView.SecondaryActionButton': {
       bordered: false,
-    }),
+      style: {
+        backgroundColor: '#00000000',
+        borderColor: '#00000000',
+      },
+    },
     'ui-onboarding.LandingSwiper.slides.Intro': {
       appIconSize: 200,
       greeting: 'Welcome to the OCBF App!',
