@@ -28,6 +28,9 @@ const THEME = {
       backgroundColor: '#FC4646',
       borderColor: '#FC4646',
     },
+    'ui-mapview.MapView.StyledConfirmButton': {
+      type: 'primary',
+    },
     'ui-prayer.PrayerView.SecondaryActionButton': {
       bordered: false,
       style: {
