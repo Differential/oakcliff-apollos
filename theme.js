@@ -28,6 +28,9 @@ const THEME = {
       backgroundColor: theme.colors.secondary,
       borderColor: theme.colors.secondary,
     }),
+    'ui-kit.Avatar.AvatarList.AddIconBackground': (theme) => ({
+      backgroundColor: theme.colors.secondary,
+    }),
     'ui-kit.FollowList.FullWidthButton': {
       bordered: false,
       type: 'primary',
