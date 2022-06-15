@@ -24,10 +24,10 @@ const THEME = {
   overrides: {
     // Fixes an issue on Android where transparency do not look good
     // This forces all buttons to be filled with colors.secondary
-    'ui-kit.Button.ButtonStyles': {
-      backgroundColor: '#FC4646',
-      borderColor: '#FC4646',
-    },
+    'ui-kit.Button.ButtonStyles': (theme) => ({
+      backgroundColor: theme.colors.secondary,
+      borderColor: theme.colors.secondary,
+    }),
     'ui-kit.FollowList.FullWidthButton': {
       bordered: false,
       type: 'primary',
@@ -35,13 +35,13 @@ const THEME = {
     'ui-mapview.MapView.StyledConfirmButton': {
       type: 'primary',
     },
-    'ui-prayer.PrayerView.SecondaryActionButton': {
-      bordered: false,
+    'ui-prayer.PrayerView.SecondaryActionButton': (theme) => ({
+      type: 'secondary',
       style: {
-        backgroundColor: '#00000000',
-        borderColor: '#00000000',
+        backgroundColor: theme.colors.lightSecondary,
+        borderColor: theme.colors.lightSecondary,
       },
-    },
+    }),
     'ui-onboarding.LandingSwiper.slides.Intro': {
       appIconSize: 200,
       greeting: 'Welcome to the OCBF App!',
