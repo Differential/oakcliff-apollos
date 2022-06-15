@@ -28,6 +28,10 @@ const THEME = {
       backgroundColor: '#FC4646',
       borderColor: '#FC4646',
     },
+    'ui-kit.FollowList.FullWidthButton': {
+      bordered: false,
+      type: 'primary',
+    },
     'ui-mapview.MapView.StyledConfirmButton': {
       type: 'primary',
     },
